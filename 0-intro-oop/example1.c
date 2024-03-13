@@ -5,12 +5,6 @@
 
 #include <stdio.h>
 
-int main() {
-    // Code logic goes here
-    return 0;
-}
-#include <stdio.h>
-
 // Define the CEO struct
 struct CEO {
     char name[50];
