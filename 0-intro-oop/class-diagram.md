@@ -1,25 +1,37 @@
 # Diagram
 
+> _**StudentID**: 10422021_  
+> _**Name**: Tran Hai Duong_
+
+
 ```mermaid
 classDiagram
-    class Person {
-        - String name
-        - int age
-        + void setName(String name)
-        + void setAge(int age)
-        + String getName()
-        + int getAge()
+    class University{
+        + name: String
+        + campus: Campus[]
+        + lecturer: Lecturer[]
     }
-    Person <|-- Student
-    Person <|-- Teacher
-    class Student {
-        - String studentId
-        + void setStudentId(String studentId)
-        + String getStudentId()
+
+    class Campus{
+        - name: String
+        - address: String
+        - distance: Double
+        + club: Club[]
     }
-    class Teacher {
-        - String teacherId
-        + void setTeacherId(String teacherId)
-        + String getTeacherId()
+
+    class Club{
+        - building: String
+        - phoneNumber: String
     }
+
+    class Lecturer{
+        + name: String
+        - office: int
+        - title: String
+        - ID: String
+    }
+
+    Campus --|> University
+    Club --> Campus
+    Lecturer --> Campus
 ```
