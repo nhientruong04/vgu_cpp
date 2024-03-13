@@ -1,7 +1,5 @@
 #include <stdio.h>
 
-#include <stdio.h>
-
 void calculate_diff_and_sign(int input_arr[], int diff_arr[], int sign_arr[], int size) {
     for (int i = 0; i < size - 1; ++i) {
         int difference = input_arr[i + 1] - input_arr[i];
