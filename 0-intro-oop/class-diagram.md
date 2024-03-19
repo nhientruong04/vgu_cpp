@@ -31,7 +31,7 @@ classDiagram
         - ID: String
     }
 
-    Campus --|> University
-    Club --> Campus
-    Lecturer --> Campus
+    University --|> Campus
+    Campus --> Club
+    Campus --> Lecturer
 ```
